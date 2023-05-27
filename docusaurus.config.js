@@ -15,8 +15,8 @@ module.exports = async function config() {
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',
-    organizationName: 'jmes-world', // Usually your GitHub org/user name.
-    projectName: 'documentation', // Usually your repo name.
+    organizationName: 'jmesworld', // Usually your GitHub org/user name.
+    projectName: 'docs', // Usually your repo name.
     i18n: {
       defaultLocale: 'en',
       locales: ['en'],
@@ -45,7 +45,7 @@ module.exports = async function config() {
             routeBasePath: '/', // Serve the docs at the site's root
             // Please change this to your repo.
             // Remove this to remove the "edit this page" links.
-            editUrl: 'https://github.com/jmes-world/documentation/',
+            editUrl: 'https://github.com/jmesworld/docs/edit/main/',
           },
           blog: false,
           theme: {

@@ -48,7 +48,7 @@ const homeCards: CardProps[] = [
   },
   */
   {
-    href: '/full-node/run-a-jmes-terra-node',
+    href: '/full-node/run-a-full-jmes-node',
     lightSVG: '/img/icons/node.svg',
     darkSVG: '/img/icons/dark/node.svg',
     header: 'Run a full node',
