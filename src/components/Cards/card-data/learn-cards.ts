@@ -16,13 +16,6 @@ const learnCards: CardProps[] = [
     summary: 'Read the JMES Blockchain Whitepaper.'
   },
   {
-    href: '/learn/app/',
-    lightSVG: '/img/icons/Glossary.svg',
-    darkSVG: '/img/icons/dark/Glossary.svg',
-    header: 'JMES App',
-    summary: 'Create a username and wallet account on the JMES blockchain'
-  },
-  {
     href: '/learn/about/blockchain/#validators',
     lightSVG: '/img/icons/core/staking.svg',
     darkSVG: '/img/icons/dark/staking.svg',
