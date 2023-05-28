@@ -8,14 +8,6 @@ const learnCards: CardProps[] = [
     header: 'JMES Blockchain',
     summary: 'Learn how the JMES protocol works.'
   },
-  /*
-  {
-    href: '/learn/terra-station',
-    lightSVG: '/img/icons/station/station.svg',
-    darkSVG: '/img/icons/dark/station.svg',
-    header: 'Get started with Station',
-    summary: 'Create a wallet and stake JMES for rewards.'
-  },*/
   {
     href: '/learn/about/whitepaper/',
     lightSVG: '/img/icons/Glossary.svg',
@@ -30,15 +22,6 @@ const learnCards: CardProps[] = [
     header: 'JMES App',
     summary: 'Create a username and wallet account on the JMES blockchain'
   },
-  /*
-  {
-    href: '/learn/about/blockchain/#what-is-luna',
-    lightSVG: '/img/icons/luna.svg',
-    darkSVG: '/img/icons/dark/luna.svg',
-    header: 'What is bJMES?',
-    summary: 'Learn about bJMES.'
-  },
-  */
   {
     href: '/learn/about/blockchain/#validators',
     lightSVG: '/img/icons/core/staking.svg',
