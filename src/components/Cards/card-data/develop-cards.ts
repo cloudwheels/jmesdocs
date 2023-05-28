@@ -16,13 +16,6 @@ const developCards: CardProps[] = [
     summary: 'Not sure  what to use? Check out the Tool guide.'
   },
   {
-    href: '/develop/incubator',
-    lightSVG: '/img/icons/terrain.svg',
-    darkSVG: '/img/icons/dark/terrain.svg',
-    header: 'Incubator',
-    summary: 'Get funding for development on JMES.'
-  },
-  {
     href: '/develop/localterra',
     lightSVG: '/img/icons/localterra.svg',
     darkSVG: '/img/icons/dark/localterra.svg',
