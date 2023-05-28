@@ -123,20 +123,6 @@ const sidebars = {
             },
           ],
         },
-        /*
-        {
-          type: 'category',
-          label: 'Developer guides',
-          collapsed: true,
-          items: [
-            'develop/guides/initial',
-            'develop/guides/sign-with-multisig',
-            'develop/guides/start-lcd',
-            'develop/vesting',
-            'develop/open-source',
-          ],
-        },
-        */
         {
           type: 'category',
           label: 'JMES Core modules',

@@ -57,21 +57,6 @@ module.exports = async function config() {
           },
         }),
       ],
-      [
-        'redocusaurus',
-        {
-          specs: [
-            {
-              id: 'complete',
-              spec: 'https://phoenix-lcd.terra.dev/swagger/swagger.yaml',
-              route: '/api/',
-            },
-          ],
-          theme: {
-            primaryColor: '#1890ff',
-          },
-        },
-      ],
     ],
     themes: ['mdx-v2'],
     themeConfig:
