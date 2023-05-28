@@ -22,22 +22,6 @@ const developCards: CardProps[] = [
     header: 'Incubator',
     summary: 'Get funding for development on JMES.'
   },
-  /*
-  {
-    href: '/develop/terrain',
-    lightSVG: '/img/icons/terrain.svg',
-    darkSVG: '/img/icons/dark/terrain.svg',
-    header: 'Terrain',
-    summary: 'The all-in-one tool for dApp development.'
-  },
-  {
-    href: '/develop/terrain/mint-an-nft.html',
-    lightSVG: '/img/icons/mintnft.svg',
-    darkSVG: '/img/icons/dark/mintnft.svg',
-    header: 'Mint an NFT',
-    summary: 'Learn how to mint your own NFTs using Terrain.'
-  },
-  */ 
   {
     href: '/develop/localterra',
     lightSVG: '/img/icons/localterra.svg',

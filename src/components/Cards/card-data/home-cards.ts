@@ -22,15 +22,6 @@ const homeCards: CardProps[] = [
     header: 'Start building',
     summary: 'Click here to learn how to build on JMES.'
   },
-  /*
-  {
-    href: '/learn/terra-station.html',
-    lightSVG: '/img/icons/station/station.svg',
-    darkSVG: '/img/icons/dark/station.svg',
-    header: 'Get started with Station',
-    summary: 'Create a wallet and stake JMES for rewards.'
-  },
-  */
   {
     href: '/develop/which-tools.html',
     lightSVG: '/img/icons/buildanapp01.svg',
@@ -38,15 +29,6 @@ const homeCards: CardProps[] = [
     header: 'Tool guide',
     summary: 'Not sure which tools to use? Start here.'
   },
-  /*
-  {
-    href: '/develop/terrain/mint-an-nft.html',
-    lightSVG: '/img/icons/mintnft.svg',
-    darkSVG: '/img/icons/dark/mintnft.svg',
-    header: 'Mint an NFT',
-    summary: 'Follow the minting tutorial to mint your own NFT.'
-  },
-  */
   {
     href: '/full-node/run-a-full-jmes-node',
     lightSVG: '/img/icons/node.svg',

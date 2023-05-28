@@ -70,37 +70,6 @@ const sidebars = {
           label: 'Developer tools',
           collapsed: true,
           items: [
-            /*
-            {
-              type: 'category',
-              label: 'Terrain',
-              collapsed: true,
-              link: { type: 'doc', id: 'develop/terrain/README' },
-              items: [
-                'develop/terrain/initial-setup',
-                'develop/terrain/using-terrain-localterra',
-                'develop/terrain/using-terrain-testnet',
-                'develop/terrain/mint-an-nft',
-                'develop/terrain/cw20-factory',
-                'develop/terrain/contract-migration',
-              ],
-            },
-            */
-            {
-              type: 'category',
-              label: 'LocalJMES',
-              collapsed: true,
-              link: { type: 'doc', id: 'develop/localjmes/README' },
-              items: [
-              /*
-                'develop/localjmes/install-localjmes',
-                'develop/localjmes/configure',
-                'develop/localjmes/integrations',
-                'develop/localjmes/contracts',
-                'develop/localjmes/accounts',
-              */
-              ],
-            },
             {
               type: 'category',
               label: 'JMES.js',
