@@ -46,7 +46,7 @@ const developCards: CardProps[] = [
     summary: 'Run a local JMES blockchain in Docker.'
   },
   {
-    href: 'http://faucet.jmes.cloud/',
+    href: 'http://faucet.jmes.art/',
     lightSVG: '/img/icons/Faucet.svg',
     darkSVG: '/img/icons/dark/Faucet.svg',
     header: 'JMES Testnet Faucet',

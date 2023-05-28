@@ -2,7 +2,7 @@
 # JMES Docs
 
 <!--div align="center">
-  <a href="https://docs.jmes.cloud/">
+  <a href="https://docs.jmes.art/">
     <img src="./static/img/docs_logo.svg" width=500>
   </a>
 </div-->
