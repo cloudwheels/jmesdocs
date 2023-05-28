@@ -156,10 +156,10 @@ type Params struct {
 The genesis parameters for the staking module outlined in the [Genesis Builder Script](https://github.com/jmesworld/genesis-tools/blob/main/src/genesis_builder.py#L132) are as follows:
 
 ```py
-    # Staking: change bond_denom to ubJMES and max validators to 130
+    # Staking: change bond_denom to ubJMES and max validators to 100
     genesis['app_state']['staking']['params'] = {
         'unbonding_time': '1814400s',  # 21 days
-        'max_validators': 130,
+        'max_validators': 100,
         'max_entries': 7,
         'historical_entries': 10000,
         'bond_denom': DENOM_BJMES
@@ -175,7 +175,7 @@ Time duration of unbonding in seconds.
 ### `max_validators`
 
 - type: `uint16`
-- default: `130`
+- default: `100`
 
 Maximum number of active validators.
 

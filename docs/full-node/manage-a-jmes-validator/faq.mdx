@@ -30,7 +30,7 @@ It is possible and encouraged for any user to run full nodes even if they do not
 
 The Udo-1 Mainnet is a public Proof of Stake (PoS) blockchain. This means a validator's weight (total stake) is determined by the amount of staking tokens (bJMES) they delegate to themselves plus the bJMES bonded to them by external delegators. The weight of a validator determines whether or not they are an active validator and how frequently they can propose a block. Validators with a higher weight will propose blocks more frequently, and in turn generate more revenue.
 
-The active validator set is made up of the top 130 validators who hold the most bJMES. The barrier for entry into the network is dictated by the value of the lowest stake held in the validator set. For instance, if a validator is created with a higher stake than the bottom validator, then this newly created validator may join the active set. If validators double-sign, or are frequently offline, they risk their staked bJMES, including bJMES delegated by users, by being slashed by the protocol to penalize negligence and misbehaviour.
+The active validator set is made up of the top 100 validators who hold the most bJMES. The barrier for entry into the network is dictated by the value of the lowest stake held in the validator set. For instance, if a validator is created with a higher stake than the bottom validator, then this newly created validator may join the active set. If validators double-sign, or are frequently offline, they risk their staked bJMES, including bJMES delegated by users, by being slashed by the protocol to penalize negligence and misbehaviour.
 
 ### What is a delegator?
 
@@ -85,7 +85,7 @@ jmesd tx staking create-validator
 
 Once a validator is created and registered, bJMES holders can delegate bJMES to them, effectively adding stake to its pool. The total stake of a validator is the total of their self-bonded bJMES plus the bJMES bonded by external delegators.
 
-**Only the top 130 validators are considered active or *bonded validators***. If a validator's total stake dips below the top 130, the validator loses its validator privileges and no longer serves as part of the active set, entering into **unbonding mode** and eventually becoming **unbonded**, or inactive.
+**Only the top 100 validators are considered active or *bonded validators***. If a validator's total stake dips below the top 100, the validator loses its validator privileges and no longer serves as part of the active set, entering into **unbonding mode** and eventually becoming **unbonded**, or inactive.
 
 ## Validator keys and states
 
@@ -141,7 +141,7 @@ Use the [JMES faucet](https://faucet.jmes.cloud/) to obtain coins for the testne
 
 ### Is there a minimum amount of bJMES that must be staked to be an active (bonded) validator?
 
-There is no set minimum. The top 130 validators with the highest total stake (where total stake = self-bonded stake + delegated stake) make up the active validator set. The validator with the lowest stake among the top 130 sets the barrier to entry for the active set.
+There is no set minimum. The top 100 validators with the highest total stake (where total stake = self-bonded stake + delegated stake) make up the active validator set. The validator with the lowest stake among the top 100 sets the barrier to entry for the active set.
 
 ### How will delegators choose their validators?
 
