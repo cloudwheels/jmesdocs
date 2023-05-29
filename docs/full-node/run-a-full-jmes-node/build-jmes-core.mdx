@@ -16,35 +16,68 @@ JMES Core is the official Golang reference implementation of the JMES node softw
    git clone -b feat/winning_grants https://github.com/jmesworld/core
    ```
 
-2. Use `git` to retrieve [Cosmos SDK](https://github.com/jmesworld/cosmos/), and check out the `v0.46.0` branch, which contains the latest stable release. Also, copy the path to this folder for the next step.
+2. Use `git` to retrieve the jmesworld version of [Cosmos SDK](https://github.com/jmesworld/cosmos-sdk/), and check out the `v0.0.99-alpha.3` tag, which contains the latest stable release. Also, find the path to this folder for use in step 4.
 
    ```py
-   git clone -b v0.46.0 https://github.com/jmesworld/cosmos-sdk.git
-
-   #  Now, copy the path to your cosmos-sdk folder
-   cd cosmos-sdk && pwd   # e.g. /root/cosmos-sdk  <-- Copy your path. You will need it in the next step!!
+   git clone https://github.com/jmesworld/cosmos-sdk.git
+   ```
+   ```py
+   #  Switch to your cosmos-sdk folder
+   cd cosmos-sdk 
+   ```
+   ```py
+   # Checkout the latest tagged version to a local branch
+   git checkout tags/v0.0.99-alpha.3 -b latest
+   ```
+   ```py
+   # Note the path to the folder and return to the home directory 
+   pwd   # e.g. /root/cosmos-sdk
    cd ..
    ```
 
-3. Replace dependecy in `go.mod` file. Ensure you replace `<PATH TO YOUR cosmos-sdk folder>` with what you copied in Step 2 above.
+3. Similarly, use `git` to retrieve the jmesworld version of [Tendermint](https://github.com/jmesworld/tendermint/), and check out the `v0.99.0-alpha.1` tag, which contains the latest stable release. Also, find the path to this folder for use in step 4.
+
+   ```py
+   git clone https://github.com/jmesworld/tendermint.git
+   ```
+   ```py
+   #  Switch to your tendermint folder
+   cd tendermint 
+   ```
+   ```py
+   # Checkout the latest tagged version to a local branch
+   git checkout tags/v0.99.0-alpha.3 -b latest
+   ```
+   ```py
+   # Note the path to the folder and return to the home directory 
+   pwd   # e.g. /root/tendermint
+   cd ..
+   ```
+
+4. Replace cosmos-sdk and tendermint dependencies in the `replace` section of the `go.mod` file. Ensure you replace `<PATH TO YOUR local folder>` with those nnoted in Steps 2 & 3  above.
 
    ```py
    cd core
 
-   sed -i 's|github.com/cosmos/cosmos-sdk => /Users/alex/GitHub/JMESWorld/cosmos-sdk| github.com/cosmos/cosmos-sdk => <PATH TO YOUR cosmos-sdk folder>|g' go.mod
+   sed -i 's|github.com/cosmos/cosmos-sdk => github.com/jmesworld/cosmos-sdk v0.46.0-jmes.1| github.com/cosmos/cosmos-sdk => <PATH TO YOUR cosmos-sdk folder>|g' go.mod
 
-   #Example: sed -i 's|github.com/cosmos/cosmos-sdk => /Users/alex/GitHub/JMESWorld/cosmos-sdk|github.com/cosmos/cosmos-sdk => /root/cosmos-sdk|g' go.mod
+   #Example: sed -i 's|github.com/cosmos/cosmos-sdk => github.com/jmesworld/cosmos-sdk v0.46.0-jmes.1|github.com/cosmos/cosmos-sdk => /root/cosmos-sdk|g' go.mod
 
- 
+   ```
+    ```py
+   sed -i 's|github.com/tendermint/tendermint => github.com/jmesworld/tendermint v0.34.21-jmes.1| github.com/tendermint/tendermint => <PATH TO YOUR tendermint folder>|g' go.mod
+
+   #sed -i 's|github.com/tendermint/tendermint => github.com/jmesworld/tendermint v0.34.21-jmes.1| github.com/tendermint/tendermint => /root/tendermint|g' go.mod
+
    ```
 
-4. Build JMES Core. This will install the JMESd executable to your [ `GOPATH` ](https://go.dev/doc/gopath_code) environment variable.
+5. Build JMES Core. This will install the JMESd executable to your [ `GOPATH` ](https://go.dev/doc/gopath_code) environment variable.
 
    ```bash
    make install
    ```
 
-3. Verify that JMES Core is installed correctly.
+6. Verify that JMES Core is installed correctly.
 
    ```bash
    jmesd version --long
